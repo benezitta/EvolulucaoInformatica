@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempos Atuais - A Evolução da Informática</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header h3 {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        /* Barra de menu */
+        nav {
+            background-color: #0077b3;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #003f66;
+            transform: scale(1.05);
+        }
+
+        /* Caixa de texto informativa */
+        nav ul li .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+
+        nav ul li:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .content {
+            text-align: justify;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #0077b3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 calc(45% - 20px);
+            /* Ajuste a largura conforme necessário */
+        }
+
+        footer {
+            background-color: #003f66;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Estilo para ícones */
+        .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Tempos Atuais</h1>
+            <h3>O Futuro da Informática</h3>
+        </div>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">🏠 Inicio</a>
+            </li>
+            <li>
+                <a href="linha_do_tempo.html">🌐 Linha do Tempo</a>
+            </li>
+            <li>
+                <a href="feedback.html">💬 Espaço do Leitor</a>
+            </li>
+            <li>
+                <a href="encerramento.html">👤 Desenvolvedor</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>🌍 O Cenário Atual da Informática</h2>
+            <p>
+                Atualmente, a informática permeia todos os aspectos da vida cotidiana. Desde o uso de smartphones e
+                dispositivos inteligentes até a aplicação de inteligência artificial em diversos setores, a tecnologia
+                da informação está presente em quase tudo que fazemos. As empresas investem cada vez mais em inovação e
+                tecnologia para se manterem competitivas no mercado.
+            </p>
+            <p>
+                Além disso, a pandemia de COVID-19 acelerou a transformação digital, forçando as organizações a adotarem
+                soluções tecnológicas de forma rápida e eficiente. O home office se tornou uma realidade para muitos
+                profissionais, o que trouxe novos desafios e oportunidades para a informática e a comunicação digital.
+            </p>
+        </div>
+
+        <div class="content">
+            <h2>🤖 A Revolução da Inteligência Artificial</h2>
+            <p>
+                A inteligência artificial (IA) é uma das áreas mais dinâmicas da informática hoje. Desde assistentes
+                pessoais como Siri e Alexa até algoritmos complexos que analisam dados em tempo real, a IA tem o
+                potencial de transformar a maneira como trabalhamos e interagimos com a tecnologia. As empresas estão
+                integrando a IA em seus produtos e serviços para melhorar a experiência do usuário e otimizar processos.
+            </p>
+            <p>
+                A IA também está sendo utilizada em setores como saúde, onde auxilia no diagnóstico de doenças, e em
+                finanças, para prever tendências do mercado. Além disso, as técnicas de aprendizado de máquina estão
+                revolucionando a forma como as empresas interpretam grandes volumes de dados, permitindo decisões mais
+                informadas.
+            </p>
+        </div>
+
+        <div class="content">
+            <h2>📱 O Impacto da Computação Móvel</h2>
+            <p>
+                A popularização dos smartphones e tablets revolucionou a forma como consumimos informação e nos
+                comunicamos. Com acesso à internet em qualquer lugar, as pessoas estão mais conectadas do que nunca. As
+                aplicações móveis facilitam a realização de tarefas diárias, desde compras até gerenciamento de
+                finanças.
+            </p>
+            <p>
+                Além disso, o surgimento de aplicativos de entrega e serviços sob demanda mudaram a forma como fazemos
+                compras e consumimos produtos e serviços. Isso trouxe um novo paradigma para o comércio, levando as
+                empresas a se adaptarem a essa nova realidade, desenvolvendo plataformas digitais que atendem às
+                necessidades dos consumidores de forma mais eficaz.
+            </p>
+        </div>
+
+        <div class="content">
+            <h2>🧬 O Futuro: Computação Quântica</h2>
+            <p>
+                Olhando para o futuro, a computação quântica promete trazer uma nova era para a informática. Essa
+                tecnologia revolucionária utiliza os princípios da mecânica quântica para realizar cálculos complexos em
+                uma fração do tempo que as máquinas tradicionais levam. Com o potencial de resolver problemas que
+                atualmente são intratáveis, a computação quântica pode impactar setores como medicina, finanças e
+                segurança cibernética.
+            </p>
+            <p>
+                Embora ainda esteja em seus estágios iniciais, empresas como Google, IBM e outras estão investindo
+                pesado em pesquisa e desenvolvimento de computadores quânticos. Espera-se que, em breve, possamos ver
+                aplicações práticas que podem revolucionar indústrias inteiras, trazendo novos desafios e oportunidades
+                para a segurança e a privacidade dos dados.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Sabrina Benevides</p>
+        <hr>
+        <p>ETEC de Guarulhos | Desenvolvimento de Sistemas | 1º Módulo</p>
+        <hr>
+        <p>Programação Web I - Profº Israel Lucania</p>
+    </footer>
+
+</body>
+
+</html>

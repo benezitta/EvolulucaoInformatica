@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Desenvolvedor e Professor</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Barra de menu */
+        nav {
+            background-color: #0077b3;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #003f66;
+            transform: scale(1.05);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo da barra lateral para a foto e informações básicas */
+        .profile-sidebar {
+            width: 30%;
+            text-align: center;
+            padding-right: 20px;
+        }
+
+        .profile-sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #005f99;
+            margin-bottom: 15px;
+        }
+
+        .profile-sidebar h2 {
+            color: #005f99;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .profile-sidebar p {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.5em;
+        }
+
+        /* Estilo da biografia */
+        .profile-bio {
+            width: 70%;
+            padding-left: 20px;
+            border-left: 2px solid #ccc;
+        }
+
+        .profile-bio h3 {
+            color: #005f99;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .profile-bio p {
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6em;
+            text-align: justify;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #003f66;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Perfil do Desenvolvedor e Professor</h1>
+        </div>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Início</a></li>
+            <li><a href="linha_do_tempo.html">🌐 Linha do Tempo</a></li>
+            <li><a href="tempos_atuais.html">📰 Tempos Atuais</a></li>
+            <li><a href="feedback.html">💬 Espaço do Leitor</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="profile-container">
+            <!-- Barra lateral com foto e informações do desenvolvedor -->
+            <div class="profile-sidebar">
+                <img src="imagens/minha-foto.jpg" alt="Foto do Desenvolvedor">
+                <h2>Sabrina Benevides</h2>
+                <p><strong>Email:</strong> sabrina.benevides@etec.sp.gov.br</p>
+            </div>
+
+            <!-- Minha Bio -->
+            <div class="profile-bio">
+                <h3>Biografia da Desenvolvedora</h3>
+                <p>
+                    Sou uma junior-junior entusiasta da área tech!
+                </p>
+                <p>
+                    Iniciei minha jornada com estudos autodidatas, logo em seguida tive minha primeira experiência
+                    extracurricular com o curso de introdução á lógicas de programação do <strong>Meninas Programadoras</strong> da USP um curso focado em atrair meninas e mulheres para área de tecnologia.
+                    Com o passar do tempo fiz outros dois cursos de <strong>Programação Web Front-End</strong> na
+                    Unibes, uma instituição brasileiro-israelita que desenvolve ações sociais e dentro desse mesmo curso
+                    fiz parte do <strong> Chicas en Tecnoogia</strong> com  o curso de desenvolvimento de appps com programação por blocos.
+
+                    Atualmente, estou cursando  o primeiro módulo de Desenvolvimento de Sistemas, na ETEC de Guarulhos.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bio do professor -->
+        <div class="profile-container" style="margin-top: 20px;">
+            <!-- Barra lateral com foto e informações do professor -->
+            <div class="profile-sidebar">
+                <img src="foto-professor.jpg" alt="Foto do Professor">
+                <h2>Israel Lucania</h2>
+                <p><strong>Email:</strong> professor@example.com</p>
+            </div>
+
+            <!-- Biografia do professor -->
+            <div class="profile-bio">
+                <h3>Biografia do Professor</h3>
+                <p>
+                    Professor de Tecnologia da Informação, dedicado a inspirar e formar novos talentos na área, com uma
+                    ampla experiência em diversas disciplinas relacionadas à programação, desenvolvimento web e ciência
+                    da computação.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Sabrina Benevides</p>
+        <hr>
+        <p>ETEC de Guarulhos | Desenvolvimento de Sistemas | 1º Módulo</p>
+        <hr>
+        <p>Programação Web I - Profº Israel Lucania</p>
+    </footer>
+
+</body>
+
+</html>

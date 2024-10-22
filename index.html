@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Evolução da Informática</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header h3 {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        /* Barra de menu */
+        nav {
+            background-color: #0077b3;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #003f66;
+            transform: scale(1.05);
+        }
+
+        /* Caixa de texto informativa */
+        nav ul li .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+
+        nav ul li:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .content {
+            text-align: justify;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #0077b3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 calc(45% - 20px); /* Ajuste a largura conforme necessário */
+        }
+
+        footer {
+            background-color: #003f66;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Estilo para ícones */
+        .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>A Evolução da Informática</h1>
+            <h3>Do ábaco aos dias de hoje</h3>
+        </div>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li>
+                <a href="linha_do_tempo.html">🌐 Linha do Tempo</a>
+                <div class="tooltip">Explore a linha do tempo</div>
+            </li>
+            <li>
+                <a href="tempos_atuais.html">📰 Tempos Atuais</a>
+                <div class="tooltip">Veja as notícias recentes</div>
+            </li>
+            <li>
+                <a href="feedback.html">💬 Espaço do Leitor</a>
+                <div class="tooltip">Deixe seu feedback</div>
+            </li>
+            <li>
+                <a href="encerramento.html">👤 Desenvolvedor</a>
+                <div class="tooltip">Conheça o desenvolvedor</div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>✨ Bem-vindo ao site sobre a evolução da informática!</h2>
+            <p>
+                Este site foi desenvolvido para explorar a evolução da tecnologia da informação, desde os primeiros
+                dispositivos de cálculo até invenções modernas, como smartphones e inteligência artificial. Explore o
+                conteúdo e descubra como a informática evoluiu ao longo dos séculos.
+            </p>
+        </div>
+
+        <div class="content">
+            <h2>📚 O que é Informática?</h2>
+            <p>
+                A informática é o estudo e a prática do processamento de informações por meio de computadores e
+                sistemas. É um campo em constante evolução, que influencia praticamente todos os aspectos da sociedade
+                moderna.
+            </p>
+        </div>
+
+        <div class="content">
+            <h2>🕰️ Uma Viagem no Tempo</h2>
+            <p>
+                Este site foi desenvolvido como parte do projeto da disciplina de Programação Web I (PWI), ministrado
+                pelo professor Israel Lucania. A proposta é apresentar de forma interativa e educativa a evolução da
+                informática, destacando os principais marcos e ferramentas que contribuíram para o avanço dessa área ao
+                longo do tempo.
+            </p>
+        </div>
+
+        <div class="content">
+            <h2>🌍 Proposta do Site: A Evolução da Informática</h2>
+            <p>
+                Esta plataforma apresenta uma linha do tempo interativa que destaca os principais marcos na evolução da
+                informática, desde o ábaco e a máquina de Turing até a era da computação quântica e da inteligência
+                artificial.
+            </p>
+            <p>
+                Através de uma interface amigável e conteúdos informativos, buscamos proporcionar aos visitantes uma
+                compreensão mais profunda da história da informática, desde o ábaco até as tecnologias mais
+                contemporâneas. O site inclui uma linha do tempo interativa, seções dedicadas a ferramentas históricas e
+                uma apresentação das inovações que moldam o nosso mundo digital atual.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Sabrina Benevides</p>
+        <hr>
+        <p>ETEC de Guarulhos | Desenvolvimento de Sistemas | 1º Módulo</p>
+        <hr>
+        <p>Programação Web I - Profº Israel Lucania</p>
+    </footer>
+
+</body>
+
+</html>

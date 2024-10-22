@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço do Leitor - Feedback</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Barra de menu */
+        nav {
+            background-color: #0077b3;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #003f66;
+            transform: scale(1.05);
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .content {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            color: #005f99;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Estilos do formulário */
+        .feedback-form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1.1em;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .feedback-form input[type="submit"] {
+            background-color: #0077b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .feedback-form input[type="submit"]:hover {
+            background-color: #005f99;
+        }
+
+        .feedback-section {
+            margin-top: 40px;
+        }
+
+        .feedback-section h3 {
+            color: #005f99;
+        }
+
+        .feedback-section .comment {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            color: #005f99;
+        }
+
+        .comment-text {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        footer {
+            background-color: #003f66;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Espaço do Leitor - Feedback</h1>
+        </div>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">🏠 Início</a>
+            </li>
+            <li>
+                <a href="linha_do_tempo.html">🌐 Linha do Tempo</a>
+            </li>
+            <li>
+                <a href="tempos_atuais.html">📰 Tempos Atuais</a>
+            </li>
+            <li>
+                <a href="encerramento.html">👤 Desenvolvedor</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>Deixe Seu Feedback</h2>
+            <p>Compartilhe sua experiência e o que achou do site! Seu feedback é muito importante para nós.</p>
+        </div>
+
+        <!-- Formulário de Feedback -->
+        <div class="feedback-form">
+            <form action="#" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+                <label for="comment">Comentário:</label>
+                <textarea id="comment" name="comment" rows="5" placeholder="Escreva seu feedback aqui..." required></textarea>
+
+                <input type="submit" value="Enviar Feedback">
+            </form>
+        </div>
+
+        <!-- Seção de Comentários -->
+        <div class="feedback-section">
+            <h3>Comentários Recentes</h3>
+
+            <div class="comment">
+                <div class="comment-author">Maria Clara</div>
+                <div class="comment-text">O site é muito interessante e informativo! Adorei a linha do tempo interativa.</div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-author">João Pedro</div>
+                <div class="comment-text">Gostei muito do layout, super fácil de navegar. Parabéns!</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Sabrina Benevides</p>
+        <hr>
+        <p>ETEC de Guarulhos | Desenvolvimento de Sistemas | 1º Módulo</p>
+        <hr>
+        <p>Programação Web I - Profº Israel Lucania</p>
+    </footer>
+
+</body>
+
+</html>
